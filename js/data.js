@@ -1,0 +1,267 @@
+// Mock data for the book recommendation system
+export const books = [
+  {
+    id: '1',
+    title: 'The Midnight Library',
+    author: 'Matt Haig',
+    description: 'Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived. To see how things would be if you had made other choices... Would you have done anything different, if you had the chance to undo your regrets?',
+    coverImage: 'https://images.pexels.com/photos/2203051/pexels-photo-2203051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.2,
+    genres: ['fiction', 'fantasy', 'philosophy'],
+    publicationYear: 2020,
+    publisher: 'Viking'
+  },
+  {
+    id: '2',
+    title: 'Atomic Habits',
+    author: 'James Clear',
+    description: 'No matter your goals, Atomic Habits offers a proven framework for improving every day. James Clear, one of the world\'s leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.',
+    coverImage: 'https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.8,
+    genres: ['non-fiction', 'self-help', 'psychology'],
+    publicationYear: 2018,
+    publisher: 'Penguin'
+  },
+  {
+    id: '3',
+    title: 'Project Hail Mary',
+    author: 'Andy Weir',
+    description: 'Ryland Grace is the sole survivor on a desperate, last-chance mission--and if he fails, humanity and the Earth itself will perish. Except that right now, he doesn\'t know that. He can\'t even remember his own name, let alone the nature of his assignment or how to complete it.',
+    coverImage: 'https://images.pexels.com/photos/5011647/pexels-photo-5011647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.7,
+    genres: ['scifi', 'fiction', 'space'],
+    publicationYear: 2021,
+    publisher: 'Ballantine Books'
+  },
+  {
+    id: '4',
+    title: 'Educated',
+    author: 'Tara Westover',
+    description: 'Born to survivalists in the mountains of Idaho, Tara Westover was 17 the first time she set foot in a classroom. Her family was so isolated from mainstream society that there was no one to ensure the children received an education, and no one to intervene when one of Tara\'s older brothers became violent.',
+    coverImage: 'https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.5,
+    genres: ['non-fiction', 'memoir', 'biography'],
+    publicationYear: 2018,
+    publisher: 'Random House'
+  },
+  {
+    id: '5',
+    title: 'The Silent Patient',
+    author: 'Alex Michaelides',
+    description: 'Alicia Berenson\'s life is seemingly perfect. A famous painter married to an in-demand fashion photographer, she lives in a grand house with big windows overlooking a park in one of London\'s most desirable areas. One evening her husband Gabriel returns home late from a fashion shoot, and Alicia shoots him five times in the face, and then never speaks another word.',
+    coverImage: 'https://images.pexels.com/photos/3358707/pexels-photo-3358707.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.3,
+    genres: ['mystery', 'thriller', 'fiction'],
+    publicationYear: 2019,
+    publisher: 'Celadon Books'
+  },
+  {
+    id: '6',
+    title: 'Dune',
+    author: 'Frank Herbert',
+    description: 'Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the "spice" melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for.',
+    coverImage: 'https://images.pexels.com/photos/3617500/pexels-photo-3617500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.6,
+    genres: ['scifi', 'fiction', 'fantasy'],
+    publicationYear: 1965,
+    publisher: 'Chilton Books'
+  },
+  {
+    id: '7',
+    title: 'Where the Crawdads Sing',
+    author: 'Delia Owens',
+    description: 'For years, rumors of the "Marsh Girl" have haunted Barkley Cove, a quiet town on the North Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the locals immediately suspect Kya Clark, the so-called Marsh Girl. But Kya is not what they say.',
+    coverImage: 'https://images.pexels.com/photos/1106468/pexels-photo-1106468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.4,
+    genres: ['fiction', 'mystery', 'romance'],
+    publicationYear: 2018,
+    publisher: 'G.P. Putnam\'s Sons'
+  },
+  {
+    id: '8',
+    title: 'The Four Winds',
+    author: 'Kristin Hannah',
+    description: 'Texas, 1934. Millions are out of work and a drought has broken the Great Plains. Farmers are fighting to keep their land and their livelihoods as the crops are failing, the water is drying up, and dust threatens to bury them all. One of the darkest periods of the Great Depression, the Dust Bowl era, has arrived with a vengeance.',
+    coverImage: 'https://images.pexels.com/photos/775200/pexels-photo-775200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.2,
+    genres: ['fiction', 'historical-fiction'],
+    publicationYear: 2021,
+    publisher: 'St. Martin\'s Press'
+  },
+  {
+    id: '9',
+    title: 'Becoming',
+    author: 'Michelle Obama',
+    description: 'In a life filled with meaning and accomplishment, Michelle Obama has emerged as one of the most iconic and compelling women of our era. As First Lady of the United States of America--the first African American to serve in that role--she helped create the most welcoming and inclusive White House in history.',
+    coverImage: 'https://images.pexels.com/photos/1056553/pexels-photo-1056553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.7,
+    genres: ['non-fiction', 'biography', 'memoir'],
+    publicationYear: 2018,
+    publisher: 'Crown'
+  },
+  {
+    id: '10',
+    title: 'The Invisible Life of Addie LaRue',
+    author: 'V.E. Schwab',
+    description: 'A Life No One Will Remember. A Story You Will Never Forget. France, 1714: in a moment of desperation, a young woman makes a Faustian bargain to live forever--and is cursed to be forgotten by everyone she meets. Thus begins the extraordinary life of Addie LaRue, and a dazzling adventure that will play out across centuries and continents, across history and art, as a young woman learns how far she will go to leave her mark on the world.',
+    coverImage: 'https://images.pexels.com/photos/3325100/pexels-photo-3325100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.3,
+    genres: ['fiction', 'fantasy', 'romance'],
+    publicationYear: 2020,
+    publisher: 'Tor Books'
+  },
+  {
+    id: '11',
+    title: 'Sapiens: A Brief History of Humankind',
+    author: 'Yuval Noah Harari',
+    description: 'From a renowned historian comes a groundbreaking narrative of humanity\'s creation and evolution--a #1 international bestseller--that explores the ways in which biology and history have defined us and enhanced our understanding of what it means to be "human."',
+    coverImage: 'https://images.pexels.com/photos/957312/pexels-photo-957312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.5,
+    genres: ['non-fiction', 'history', 'science'],
+    publicationYear: 2014,
+    publisher: 'Harper'
+  },
+  {
+    id: '12',
+    title: 'The Alchemist',
+    author: 'Paulo Coelho',
+    description: 'Paulo Coelho\'s enchanting novel has inspired a devoted following around the world. This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian shepherd boy named Santiago who travels from his homeland in Spain to the Egyptian desert in search of a treasure buried near the Pyramids.',
+    coverImage: 'https://images.pexels.com/photos/414144/pexels-photo-414144.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.6,
+    genres: ['fiction', 'philosophy', 'fantasy'],
+    publicationYear: 1988,
+    publisher: 'HarperOne'
+  },
+  {
+    id: '13',
+    title: 'The Nightingale',
+    author: 'Kristin Hannah',
+    description: 'In love we find out who we want to be. In war we find out who we are. FRANCE, 1939. In the quiet village of Carriveau, Vianne Mauriac says goodbye to her husband, Antoine, as he heads for the Front. She doesn\'t believe that the Nazis will invade France...but invade they do, in droves of marching soldiers, in caravans of trucks and tanks, in planes that fill the skies and drop bombs upon the innocent.',
+    coverImage: 'https://images.pexels.com/photos/2397651/pexels-photo-2397651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.4,
+    genres: ['fiction', 'historical-fiction', 'war'],
+    publicationYear: 2015,
+    publisher: 'St. Martin\'s Press'
+  },
+  {
+    id: '14',
+    title: 'The Song of Achilles',
+    author: 'Madeline Miller',
+    description: 'A tale of gods, kings, immortal fame, and the human heart, The Song of Achilles is a dazzling literary feat that brilliantly reimagines Homer\'s enduring masterwork, The Iliad. An action-packed adventure, an epic love story, a marvelously conceived and executed page-turner.',
+    coverImage: 'https://images.pexels.com/photos/4153146/pexels-photo-4153146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.3,
+    genres: ['fiction', 'fantasy', 'historical-fiction'],
+    publicationYear: 2011,
+    publisher: 'Ecco'
+  },
+  {
+    id: '15',
+    title: 'The Guest List',
+    author: 'Lucy Foley',
+    description: 'On an island off the coast of Ireland, guests gather to celebrate two people joining their lives together as one. The groom: handsome and charming, a rising television star. The bride: smart and ambitious, a magazine publisher. It\'s a wedding for a magazine, or for a celebrity: the designer dress, the remote location, the luxe party favors, the boutique whiskey. The cell phone service may be spotty and the waves may be rough, but every detail has been expertly planned and will be expertly executed.',
+    coverImage: 'https://images.pexels.com/photos/762041/pexels-photo-762041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.0,
+    genres: ['mystery', 'thriller', 'fiction'],
+    publicationYear: 2020,
+    publisher: 'William Morrow'
+  },
+  {
+    id: '16',
+    title: 'Circe',
+    author: 'Madeline Miller',
+    description: 'In the house of Helios, god of the sun and mightiest of the Titans, a daughter is born. But Circe is a strange child--not powerful, like her father, nor viciously alluring like her mother. Turning to the world of mortals for companionship, she discovers that she does possess power--the power of witchcraft, which can transform rivals into monsters and menace the gods themselves.',
+    coverImage: 'https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.4,
+    genres: ['fiction', 'fantasy', 'mythology'],
+    publicationYear: 2018,
+    publisher: 'Little, Brown and Company'
+  },
+  {
+    id: '17',
+    title: 'Klara and the Sun',
+    author: 'Kazuo Ishiguro',
+    description: 'From the bestselling author of Never Let Me Go and The Remains of the Day, a novel that asks, "What does it mean to love?" In its award-winning author\'s first novel since winning the Nobel Prize, Klara and the Sun tells the story of Klara, an Artificial Friend with outstanding observational qualities, who, from her place in the store, watches carefully the behavior of those who come in to browse, and of those who pass on the street outside.',
+    coverImage: 'https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.1,
+    genres: ['fiction', 'scifi', 'dystopian'],
+    publicationYear: 2021,
+    publisher: 'Knopf'
+  },
+  {
+    id: '18',
+    title: 'The Personal Librarian',
+    author: 'Marie Benedict',
+    description: 'The remarkable story of J. P. Morgan\'s personal librarian, Belle da Costa Greene, the Black American woman who was forced to hide her true identity and pass as white to leave a lasting legacy that enriched our nation.',
+    coverImage: 'https://images.pexels.com/photos/1261180/pexels-photo-1261180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.2,
+    genres: ['fiction', 'historical-fiction', 'biography'],
+    publicationYear: 2021,
+    publisher: 'Berkley'
+  },
+  {
+    id: '19',
+    title: 'The House in the Cerulean Sea',
+    author: 'TJ Klune',
+    description: 'A magical island. A dangerous task. A burning secret. Linus Baker leads a quiet, solitary life. At forty, he lives in a tiny house with a devious cat and his old records. As a Case Worker at the Department in Charge Of Magical Youth, he spends his days overseeing the well-being of children in government-sanctioned orphanages.',
+    coverImage: 'https://images.pexels.com/photos/1421903/pexels-photo-1421903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.5,
+    genres: ['fiction', 'fantasy', 'lgbt'],
+    publicationYear: 2020,
+    publisher: 'Tor Books'
+  },
+  {
+    id: '20',
+    title: 'The Seven Husbands of Evelyn Hugo',
+    author: 'Taylor Jenkins Reid',
+    description: 'Aging and reclusive Hollywood movie icon Evelyn Hugo is finally ready to tell the truth about her glamorous and scandalous life. But when she chooses unknown magazine reporter Monique Grant for the job, no one is more astounded than Monique herself. Why her? Why now?',
+    coverImage: 'https://images.pexels.com/photos/1666816/pexels-photo-1666816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.7,
+    genres: ['fiction', 'romance', 'historical-fiction'],
+    publicationYear: 2017,
+    publisher: 'Atria Books'
+  },
+  {
+    id: '21',
+    title: 'The Vanishing Half',
+    author: 'Brit Bennett',
+    description: 'The Vignes twin sisters will always be identical. But after growing up together in a small, southern black community and running away at age sixteen, it\'s not just the shape of their daily lives that is different as adults, it\'s everything: their families, their communities, their racial identities.',
+    coverImage: 'https://images.pexels.com/photos/1766604/pexels-photo-1766604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.3,
+    genres: ['fiction', 'historical-fiction', 'race'],
+    publicationYear: 2020,
+    publisher: 'Riverhead Books'
+  },
+  {
+    id: '22',
+    title: 'The Lincoln Highway',
+    author: 'Amor Towles',
+    description: 'In June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\'s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew.',
+    coverImage: 'https://images.pexels.com/photos/2896840/pexels-photo-2896840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.3,
+    genres: ['fiction', 'historical-fiction'],
+    publicationYear: 2021,
+    publisher: 'Viking'
+  },
+  {
+    id: '23',
+    title: 'How to Win Friends and Influence People',
+    author: 'Dale Carnegie',
+    description: 'You can go after the job you want--and get it! You can take the job you have--and improve it! You can take any situation--and make it work for you! Dale Carnegie\'s rock-solid, time-tested advice has carried countless people up the ladder of success in their business and personal lives.',
+    coverImage: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.6,
+    genres: ['non-fiction', 'self-help', 'business'],
+    publicationYear: 1936,
+    publisher: 'Simon & Schuster'
+  },
+  {
+    id: '24',
+    title: 'The Subtle Art of Not Giving a F*ck',
+    author: 'Mark Manson',
+    description: 'In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be "positive" all the time so that we can truly become better, happier people. For decades, we\'ve been told that positive thinking is the key to a happy, rich life.',
+    coverImage: 'https://images.pexels.com/photos/2868847/pexels-photo-2868847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    rating: 4.2,
+    genres: ['non-fiction', 'self-help', 'psychology'],
+    publicationYear: 2016,
+    publisher: 'Harper'
+  }
+];

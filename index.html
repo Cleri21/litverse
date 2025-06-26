@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booksy - Smart Book Recommendations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header id="header">
+        <div class="container">
+          <div class="logo">
+            <h1>Litverse</h1>
+          </div>
+          <div class="search-container">
+            <div class="search-bar">
+              <i class="fas fa-search"></i>
+              <input type="text" id="search-input" placeholder="Search books, authors, genres...">
+            </div>
+          </div>
+          <nav>
+            <button id="notification-btn" class="notification-btn">
+              <i class="fas fa-bell"></i>
+              <span class="notification-badge">0</span>
+            </button>
+            <button id="profile-btn" class="profile-btn">
+              <i class="fas fa-user-circle"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <div class="container">
+          <!-- Welcome Section -->
+          <section id="welcome-section" class="section">
+            <div class="welcome-content">
+              <h2>Discover your next favorite book</h2>
+              <p>Personalized recommendations based on your reading preferences</p>
+              <button id="get-started-btn" class="btn primary-btn">Get Started</button>
+            </div>
+            <div class="welcome-image">
+              <img src="https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Book graphic">
+            </div>
+          </section>
+
+          <!-- User Preferences (initially hidden) -->
+          <section id="preferences-section" class="section hidden">
+            <h2>Tell us what you like</h2>
+            <p>Help us understand your reading preferences</p>
+            
+            <div class="preference-grid">
+              <div class="preference-card" data-genre="fiction">
+                <i class="fas fa-book"></i>
+                <h3>Fiction</h3>
+              </div>
+              <div class="preference-card" data-genre="non-fiction">
+                <i class="fas fa-landmark"></i>
+                <h3>Non-Fiction</h3>
+              </div>
+              <div class="preference-card" data-genre="mystery">
+                <i class="fas fa-search"></i>
+                <h3>Mystery</h3>
+              </div>
+              <div class="preference-card" data-genre="scifi">
+                <i class="fas fa-rocket"></i>
+                <h3>Sci-Fi</h3>
+              </div>
+              <div class="preference-card" data-genre="romance">
+                <i class="fas fa-heart"></i>
+                <h3>Romance</h3>
+              </div>
+              <div class="preference-card" data-genre="fantasy">
+                <i class="fas fa-dragon"></i>
+                <h3>Fantasy</h3>
+              </div>
+              <div class="preference-card" data-genre="biography">
+                <i class="fas fa-user"></i>
+                <h3>Biography</h3>
+              </div>
+              <div class="preference-card" data-genre="history">
+                <i class="fas fa-history"></i>
+                <h3>History</h3>
+              </div>
+            </div>
+            
+            <button id="save-preferences-btn" class="btn primary-btn">Save Preferences</button>
+          </section>
+
+          <!-- Recommendations Section -->
+          <section id="recommendations-section" class="section hidden">
+            <h2>Recommended for You</h2>
+            <div class="book-grid" id="recommendations-container">
+              <!-- Books will be dynamically inserted here -->
+            </div>
+          </section>
+
+          <!-- Trending Section -->
+          <section id="trending-section" class="section">
+            <h2>Trending Now</h2>
+            <div class="book-grid" id="trending-container">
+              <!-- Trending books will be dynamically inserted here -->
+            </div>
+          </section>
+
+          <!-- Genres Section -->
+          <section id="genres-section" class="section">
+            <h2>Browse by Genre</h2>
+            <div class="genre-tabs">
+              <button class="genre-tab active" data-genre="all">All</button>
+              <button class="genre-tab" data-genre="fiction">Fiction</button>
+              <button class="genre-tab" data-genre="non-fiction">Non-Fiction</button>
+              <button class="genre-tab" data-genre="mystery">Mystery</button>
+              <button class="genre-tab" data-genre="scifi">Sci-Fi</button>
+              <button class="genre-tab" data-genre="fantasy">Fantasy</button>
+            </div>
+            <div class="book-grid" id="genre-container">
+              <!-- Genre books will be dynamically inserted here -->
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Book Detail Modal -->
+      <div id="book-detail-modal" class="modal">
+        <div class="modal-content">
+          <button class="close-modal">&times;</button>
+          <div class="book-detail-container">
+            <!-- Book details will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Notification Panel -->
+      <div id="notification-panel" class="notification-panel hidden">
+        <div class="notification-header">
+          <h3>Notifications</h3>
+          <button id="clear-notifications-btn">Clear All</button>
+        </div>
+        <div class="notification-list" id="notification-list">
+          <!-- Notifications will be dynamically inserted here -->
+        </div>
+      </div>
+
+      <!-- User Profile Panel -->
+      <div id="profile-panel" class="profile-panel hidden">
+        <div class="profile-header">
+          <h3>Your Profile</h3>
+          <button class="close-panel">&times;</button>
+        </div>
+        <div class="profile-content">
+          <div class="profile-info">
+            <i class="fas fa-user-circle profile-avatar"></i>
+            <div class="profile-name">
+              <h4 id="profile-name">Reader</h4>
+              <p>Book Enthusiast</p>
+            </div>
+          </div>
+          <div class="profile-stats">
+            <div class="stat">
+              <span id="books-read">0</span>
+              <p>Books Read</p>
+            </div>
+            <div class="stat">
+              <span id="books-saved">0</span>
+              <p>Saved</p>
+            </div>
+          </div>
+          <div class="profile-sections">
+            <h4>Reading History</h4>
+            <div id="reading-history" class="profile-list">
+              <!-- Reading history will be dynamically inserted here -->
+              <p class="empty-list-message">No books in your history yet</p>
+            </div>
+            
+            <h4>Saved Books</h4>
+            <div id="saved-books" class="profile-list">
+              <!-- Saved books will be dynamically inserted here -->
+              <p class="empty-list-message">No saved books yet</p>
+            </div>
+          </div>
+          <button id="edit-preferences-btn" class="btn secondary-btn">Edit Preferences</button>
+        </div>
+      </div>
+      
+      <!-- Analysis Panel -->
+      <div id="analysis-panel" class="analysis-panel hidden">
+        <div class="analysis-header">
+          <h3>Your Reading Analysis</h3>
+          <button class="close-panel">&times;</button>
+        </div>
+        <div class="analysis-content">
+          <div class="analysis-chart">
+            <h4>Genre Distribution</h4>
+            <div class="chart-container" id="genre-chart">
+              <!-- Chart will be dynamically inserted here -->
+            </div>
+          </div>
+          <div class="analysis-insights">
+            <h4>Insights</h4>
+            <ul id="insights-list">
+              <!-- Insights will be dynamically inserted here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay for Modals and Panels -->
+    <div id="overlay" class="overlay hidden"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
